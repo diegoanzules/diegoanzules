@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" href="logo-oficial.png"><meta name="description" content="Diego Anzules Consultor: asesoría tributaria, nómina, constitución de compañías y capacitaciones en Ecuador.">
+<title>Diego Anzules | Consultoría y capacitación</title><link rel="icon" type="image/png" href="logo-oficial.png">
+<style>
+:root{--navy:#101e36;--navy2:#172a47;--gold:#c6a45a;--ink:#1d2b40;--muted:#64748b;--bg:#f5f7fa;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial;color:var(--ink);background:var(--bg);line-height:1.6}
+button,input,textarea,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+.layout{display:grid;grid-template-columns:268px 1fr;min-height:100vh}.sidebar{background:var(--navy);color:#e7ecf4;padding:30px 18px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;padding:7px}.brand img{width:66px;height:66px;object-fit:contain;background:#fff;border-radius:12px;padding:3px}.brand strong{display:block;color:#fff;line-height:1.15;font-size:16px}.brand small{letter-spacing:2px;color:var(--gold);font-size:10px}
+.nav{display:grid;gap:5px}.nav button{width:100%;background:transparent;border:0;color:#cbd5e1;text-align:left;padding:13px 14px;border-radius:10px;display:flex;gap:12px;align-items:center;font-size:14px}
+.nav button:hover,.nav button.active{background:#263b59;color:white}.nav button.active{box-shadow:inset 3px 0 var(--gold)}.nav .num{font-size:11px;color:var(--gold)}
+.sidefoot{margin-top:auto;font-size:12px;color:#a9b6c7;border-top:1px solid #ffffff25;padding:18px 8px}
+main{min-width:0}.top{height:70px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 5%;border-bottom:1px solid #e8edf2}.top span{font-size:13px;color:var(--muted)}.top a{font-size:13px;font-weight:700;color:var(--navy)}
+.content{max-width:1190px;margin:auto;padding:44px 5% 80px}.panel{display:none;animation:fade .3s ease}.panel.active{display:block}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2.5px;color:#a27c30;font-weight:800}.hero{background:linear-gradient(115deg,#101e36 0%,#223a5a 100%);color:#fff;border-radius:24px;padding:clamp(32px,6vw,70px);min-height:400px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;right:-95px;top:-90px;width:370px;height:370px;border:1px solid #c6a45a55;border-radius:50%;box-shadow:0 0 0 65px #c6a45a0d,0 0 0 130px #c6a45a09;pointer-events:none}.hero h1{font-size:clamp(32px,4.5vw,56px);line-height:1.12;max-width:760px;margin:15px 0 20px}.hero p{max-width:630px;color:#d6dfeb;font-size:17px}.hero .eyebrow{color:#e5c57b}.hero-logo{width:180px;max-width:42%;display:block;object-fit:contain;background:white;border-radius:15px;padding:10px;margin-bottom:25px;box-shadow:0 12px 30px #0002}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:10px;border:1px solid transparent;font-weight:750;font-size:14px;transition:.2s}.btn.primary{background:var(--gold);color:#101e36}.btn.primary:hover{background:#e1c17a}.btn.secondary{border-color:#ffffff65;color:white;background:transparent}.btn.dark{background:var(--navy);color:white}
+.sectionhead{margin-bottom:24px}.sectionhead h2{font-size:clamp(28px,3.3vw,39px);line-height:1.2;margin:8px 0}.sectionhead p{color:var(--muted);max-width:760px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0}.card{background:white;border:1px solid #e6eaf0;border-radius:16px;padding:25px;box-shadow:0 8px 28px #14213a08}.card h3{font-size:19px;line-height:1.3;margin:12px 0}.card p{font-size:14px;color:#617084}.card .symbol{width:44px;height:44px;background:#f5eedf;color:#92702e;border-radius:12px;display:grid;place-items:center;font-size:21px}.card ul{padding-left:19px;color:#4c5c71;font-size:14px}.card li{margin:7px 0}
+.card .more{margin-top:12px;border:0;background:none;color:#8d6c2e;font-weight:750;padding:0}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.kpi{background:#fff;border-radius:14px;padding:20px;border:1px solid #e8edf2}.kpi b{display:block;font-size:20px;color:var(--navy)}.kpi span{font-size:12px;color:var(--muted)}
+.note{border-left:3px solid var(--gold);background:#fff;padding:16px 20px;margin:20px 0;border-radius:0 12px 12px 0;font-size:14px;color:#586579}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.step{padding:24px;background:white;border:1px solid #e6eaf0;border-radius:16px}.step b{color:#a37c30;font-size:23px}.step h3{font-size:16px}
+details{background:#fff;border:1px solid #e6eaf0;border-radius:12px;padding:15px 18px;margin-bottom:10px}summary{cursor:pointer;font-weight:700}details p{color:var(--muted);font-size:14px}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:20px}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:13px;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid #dce3eb;border-radius:9px;padding:12px;background:#fff;color:var(--ink)}.field textarea{min-height:100px;resize:vertical}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.chip{padding:8px 13px;border:1px solid #dbe2eb;border-radius:999px;font-size:13px;background:white}
+.mobilebar{display:none}.footer{padding:30px 5%;font-size:12px;color:#78869a;text-align:center}
+@media(max-width:980px){.layout{grid-template-columns:1fr}.sidebar{display:none}.mobilebar{display:flex;position:sticky;top:0;z-index:20;background:var(--navy);padding:12px 18px;align-items:center;justify-content:space-between;color:white}.mobilebar button{background:transparent;color:white;border:1px solid #ffffff55;border-radius:8px;padding:8px 12px}.sidebar.open{display:flex;position:fixed;z-index:30;left:0;top:55px;bottom:0;height:calc(100vh - 55px);width:min(310px,90vw);box-shadow:10px 0 0 100vw #0008}.top{height:52px}.content{padding:25px 5% 65px}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.cards,.steps,.contact,.kpis{grid-template-columns:1fr}.hero{padding:30px 24px;min-height:auto}.hero h1{font-size:34px}.top{padding:0 5%}.card{padding:21px}}
+
+.mobile-identity{display:flex;align-items:center;gap:9px}.mobile-identity img{height:34px;width:34px;object-fit:contain;background:white;border-radius:5px}/* EDICIÓN EJECUTIVA PREMIUM · FUSIÓN DE AMBOS ESTILOS */
+:root{--navy:#0d1c33;--navy2:#1b304d;--gold:#bb9444;--ink:#19273c;--muted:#617083;--bg:#f7f8fa}
+body{background:var(--bg)}
+.sidebar{background:linear-gradient(180deg,#101d33,#182c48);border-right:1px solid #d3b87535}
+.brand{background:#fff;border-radius:15px;padding:12px 10px;justify-content:center;box-shadow:0 8px 28px #0002}
+.brand img{width:100%;max-width:175px;height:auto;max-height:145px;object-fit:contain;border-radius:0}
+.brand div{display:none}
+.nav button.active{background:#ffffff19;box-shadow:inset 3px 0 #d4b267}
+.top{background:#fff;box-shadow:0 2px 12px #12223a06}
+.top a{background:#f8f2e5;padding:8px 13px;border-radius:8px;color:#6f5425}
+.content{max-width:1260px}
+.hero{background:linear-gradient(115deg,#ffffff 0%,#faf8f2 65%,#f2e7d0 100%);color:#17243a;border:1px solid #e9e1d2;box-shadow:0 18px 50px #1d2b4010}
+.hero:after{border-color:#c2a05e55;box-shadow:0 0 0 65px #c6a45a13,0 0 0 130px #c6a45a0b}
+.hero p{color:#536276}.hero .eyebrow{color:#96702c}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-1.3px}
+.hero .btn.secondary{border-color:#c6a45a;color:#1b2c42;background:#fff}
+.btn.primary{background:#bd984e;color:#fff}
+.btn.primary:hover{background:#a77e34}
+.card{box-shadow:0 10px 32px #162c4708;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 16px 34px #162c4712}
+.sectionhead h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.7px}
+.kpi{border-top:3px solid #c6a45a}
+.executive-logo{display:block;width:245px;max-width:65%;height:auto;object-fit:contain;margin:0 0 16px;background:#fff;border-radius:12px;padding:9px}
+.executive-line{width:75px;height:3px;background:linear-gradient(90deg,#bd984e,#f0dcab);margin:16px 0 0}
+@media(max-width:980px){.brand img{max-width:150px}.sidebar{box-shadow:12px 0 40px #0003}}
+
+
+/* PALETA CORPORATIVA REFINADA — AZUL NOCHE · CHAMPÁN · MARFIL */
+:root{
+  --navy:#12233D; --navy2:#233A58; --gold:#B58B43;
+  --ink:#202D40; --muted:#667488; --bg:#F6F4F0; --white:#FFFFFF;
+  --champagne:#E9D6B1; --ivory:#FBF9F5;
+}
+body{background:var(--bg);color:var(--ink)}
+.sidebar{background:linear-gradient(165deg,#0E1B30 0%,#1A304B 58%,#233B56 100%);border-right:1px solid #d2b57d33}
+.nav button{color:#DFE5ED}
+.nav button:hover{background:#ffffff15;color:#fff}
+.nav button.active{background:linear-gradient(90deg,#D7B77727,#ffffff0a);box-shadow:inset 3px 0 #E3C68E;color:#fff}
+.nav .num{color:#E0C48C}
+.sidefoot{color:#C2CCDA}
+.top{background:#FFFEFC;border-bottom:1px solid #E7E1D7}
+.top a{background:#F4EBDB;color:#785A29}
+.hero{background:linear-gradient(120deg,#FFFEFC 0%,#FAF7F0 58%,#F1E7D5 100%);border:1px solid #E8DDC9;box-shadow:0 20px 60px #1C30421A}
+.hero h1{color:#162942}
+.hero p{color:#58677A}
+.hero .eyebrow,.eyebrow{color:#95703A}
+.hero:after{border-color:#CBA96855;box-shadow:0 0 0 65px #C6A45A0D,0 0 0 130px #C6A45A0A}
+.executive-line{background:linear-gradient(90deg,#A77E39,#E9D5A6)}
+.btn.primary{background:#B58B43;color:#fff}
+.btn.primary:hover{background:#98702F}
+.btn.dark{background:#172A45;color:#fff}
+.btn.dark:hover{background:#253F5F}
+.hero .btn.secondary{border-color:#BDA171;background:#fff;color:#213752}
+.card,.step,.kpi,details{background:#FFFEFC;border:1px solid #E9E5DD;box-shadow:0 10px 30px #20324B08}
+.card:hover{border-color:#D9C7A7;box-shadow:0 18px 36px #20324B15}
+.card .symbol{background:#F4ECDD;color:#98712F}
+.card h3,.step h3,.kpi b{color:#203650}
+.card p,.card ul,.step p{color:#627084}
+.sectionhead h2{color:#192D47}
+.kpi{border-top:3px solid #BE9B5B}
+.note{border-left:3px solid #B58B43;background:#FFFEFC}
+.chip{background:#FFFEFC;border-color:#DDD5C7;color:#40516A}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #C8A96C;outline-offset:1px}
+.footer{color:#758193}
+@media(max-width:980px){.mobilebar{background:#12233D}}
+
+
+/* ALTERNATIVA: VERDE PETRÓLEO, COBRE Y PERLA */
+:root{--navy:#143A3B;--navy2:#205456;--gold:#BA8156;--ink:#203537;--muted:#607678;--bg:#F3F6F4;--white:#FFFFFF}
+body{background:#F3F6F4;color:#203537}
+.sidebar{background:linear-gradient(160deg,#102F31,#1D4B4B 70%,#28575A);border-right:1px solid #D3A17D44}
+.nav button{color:#D9E8E5}.nav button:hover{background:#ffffff18}
+.nav button.active{background:linear-gradient(90deg,#D7A37B36,#ffffff0a);box-shadow:inset 3px 0 #DCA67E;color:#fff}
+.nav .num{color:#E6B78F}.sidefoot{color:#C2D7D3}
+.top{background:#FCFEFD;border-bottom:1px solid #DDE8E3}
+.top a{background:#F3E8DF;color:#865638}
+.hero{background:linear-gradient(118deg,#FFFFFF 0%,#F4FAF7 58%,#DDECE7 100%);border:1px solid #D9E7E1;box-shadow:0 20px 55px #183E3C13}
+.hero h1{color:#173E3D}.hero p{color:#56716F}
+.hero .eyebrow,.eyebrow{color:#A36B48}
+.hero:after{border-color:#8FB8AD66;box-shadow:0 0 0 65px #5B958A12,0 0 0 130px #5B958A09}
+.executive-line{background:linear-gradient(90deg,#A46A45,#E6BE9E)}
+.btn.primary{background:#AD754E;color:#fff}.btn.primary:hover{background:#8E5937}
+.btn.dark{background:#174344;color:#fff}.btn.dark:hover{background:#286163}
+.hero .btn.secondary{border-color:#B3CCC3;background:#fff;color:#174344}
+.card,.step,.kpi,details{background:#FFFFFF;border:1px solid #DDE8E3;box-shadow:0 10px 30px #163C3809}
+.card:hover{border-color:#A7C6BC;box-shadow:0 18px 36px #163C3815}
+.card .symbol{background:#E6F0EB;color:#28645C}
+.card h3,.step h3,.kpi b,.sectionhead h2{color:#1A4846}
+.card p,.card ul,.step p{color:#637A77}
+.kpi{border-top:3px solid #B7845D}
+.note{border-left:3px solid #B7845D;background:#fff}
+.chip{background:#fff;border-color:#D4E4DC;color:#315A55}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #86B5A7;outline-offset:1px}
+.footer{color:#748984}
+@media(max-width:980px){.mobilebar{background:#143A3B}}
+
+</style></head>
+<body><div class="mobilebar"><span class="mobile-identity"><img src="logo-oficial.png" alt="Logo Diego Anzules Consultor"><strong>Diego Anzules</strong></span><button id="menuToggle" aria-expanded="false" aria-controls="sidebar">☰ Menú</button></div>
+<div class="layout"><aside class="sidebar" id="sidebar"><div class="brand"><img src="logo-oficial.png" alt="Logotipo Diego Anzules Consultor"><div><strong>Diego Anzules</strong><small>CONSULTOR</small></div></div>
+<nav class="nav" aria-label="Secciones de la web">
+<button data-page="inicio" class="active"><span class="num">01</span> Inicio</button>
+<button data-page="tributaria"><span class="num">02</span> Asesoría tributaria</button>
+<button data-page="nomina"><span class="num">03</span> Nómina y RR. HH.</button>
+<button data-page="empresas"><span class="num">04</span> Constitución de empresas</button>
+<button data-page="capacitaciones"><span class="num">05</span> Capacitaciones</button>
+<button data-page="empleabilidad"><span class="num">06</span> CV y LinkedIn</button>
+<button data-page="metodo"><span class="num">07</span> Cómo trabajamos</button>
+<button data-page="faq"><span class="num">08</span> Preguntas frecuentes</button>
+<button data-page="contacto"><span class="num">09</span> Contacto</button></nav>
+<div class="sidefoot">Asesoría personalizada · Ecuador<br>WhatsApp: 099 632 3682</div></aside>
+<main><div class="top"><span>Soluciones tributarias, empresariales y de talento humano</span><a href="https://wa.me/593996323682" target="_blank" rel="noopener">Solicitar asesoría ↗</a></div>
+<div class="content">
+<section class="panel active" id="inicio"><div class="hero"><div class="eyebrow">Consultoría estratégica · Ecuador</div><h1>Decisiones claras.<br>Empresas más sólidas.</h1><p>Asesoría tributaria, gestión de nómina, constitución de compañías y formación profesional, con atención práctica y personalizada.</p><div class="actions"><button class="btn primary" data-go="contacto">Solicitar una asesoría →</button><button class="btn secondary" data-go="empresas">Constituir mi empresa</button></div></div>
+<div class="sectionhead" style="margin-top:38px"><div class="eyebrow">Lo que podemos hacer por ti</div><h2>Soluciones para cada etapa</h2><p>Desde poner en marcha tu negocio hasta fortalecer tus procesos y potenciar tu perfil profesional.</p></div>
+<div class="cards">
+<article class="card"><div class="symbol">◈</div><h3>Tributación</h3><p>Declaraciones, anexos, regularizaciones y acompañamiento ante el SRI.</p><button class="more" data-go="tributaria">Explorar servicio →</button></article>
+<article class="card"><div class="symbol">▤</div><h3>Nómina y talento humano</h3><p>Procesos de nómina, obligaciones laborales, indicadores y soporte operativo.</p><button class="more" data-go="nomina">Explorar servicio →</button></article>
+<article class="card"><div class="symbol">⌂</div><h3>Constitución de compañías</h3><p>Orientación para crear SAS, sociedades anónimas y otras estructuras empresariales.</p><button class="more" data-go="empresas">Explorar servicio →</button></article>
+<article class="card"><div class="symbol">✦</div><h3>Capacitaciones</h3><p>Programas aplicados de tributación, nómina y actualización laboral.</p><button class="more" data-go="capacitaciones">Explorar servicio →</button></article>
+<article class="card"><div class="symbol">↗</div><h3>CV y LinkedIn</h3><p>Optimización de hojas de vida, marca profesional y herramientas de búsqueda laboral.</p><button class="more" data-go="empleabilidad">Explorar servicio →</button></article>
+<article class="card"><div class="symbol">◎</div><h3>Atención personalizada</h3><p>Diagnóstico, propuesta de alcance y seguimiento según cada necesidad.</p><button class="more" data-go="metodo">Conocer el proceso →</button></article></div>
+<div class="kpis"><div class="kpi"><b>Personas</b><span>Servicios tributarios y profesionales</span></div><div class="kpi"><b>Emprendedores</b><span>Formalización y cumplimiento</span></div><div class="kpi"><b>Empresas</b><span>Nómina, procesos y capacitación</span></div></div></section>
+<section class="panel" id="tributaria"><div class="sectionhead"><div class="eyebrow">Servicios especializados</div><h2>Asesoría tributaria</h2><p>Apoyo para cumplir obligaciones fiscales y gestionar trámites con información clara y oportuna.</p></div><div class="cards">
+<div class="card"><div class="symbol">▦</div><h3>Declaraciones</h3><ul><li>IVA mensual y semestral</li><li>Impuesto a la Renta de personas naturales</li><li>Declaraciones y obligaciones según régimen aplicable</li></ul></div>
+<div class="card"><div class="symbol">▧</div><h3>Anexos y registros</h3><ul><li>Anexos de gastos personales</li><li>RDEP y otros anexos aplicables</li><li>Revisión de obligaciones y notificaciones del SRI</li></ul></div>
+<div class="card"><div class="symbol">◇</div><h3>Trámites y regularización</h3><ul><li>Devolución de impuestos, cuando corresponda</li><li>Actualizaciones de RUC</li><li>Facturación electrónica y firma electrónica</li><li>Consultas y orientación tributaria</li></ul></div></div><button class="btn dark" data-go="contacto">Consultar mi caso →</button></section>
+<section class="panel" id="nomina"><div class="sectionhead"><div class="eyebrow">Gestión de personas</div><h2>Nómina y Recursos Humanos</h2><p>Soporte en administración de remuneraciones, procesos laborales y control de información para decisiones empresariales.</p></div><div class="cards">
+<div class="card"><div class="symbol">▤</div><h3>Administración de nómina</h3><ul><li>Revisión y cálculo de roles de pago</li><li>Ingresos variables, bonos y horas extras</li><li>Beneficios sociales y provisiones</li><li>Liquidaciones y finiquitos</li></ul></div>
+<div class="card"><div class="symbol">✓</div><h3>Cumplimiento laboral</h3><ul><li>Procesos y documentación de contratación</li><li>Orientación sobre IESS y SUT</li><li>Revisión de novedades y obligaciones</li><li>Actualización normativa laboral</li></ul></div>
+<div class="card"><div class="symbol">▥</div><h3>Control y mejora</h3><ul><li>Indicadores de rotación, vacaciones y dotación</li><li>Revisión de procedimientos</li><li>Tableros e informes de gestión</li><li>Acompañamiento a equipos de nómina</li></ul></div></div><button class="btn dark" data-go="contacto">Solicitar diagnóstico →</button></section>
+<section class="panel" id="empresas"><div class="sectionhead"><div class="eyebrow">Emprende con estructura</div><h2>Constitución de compañías</h2><p>Orientación durante el proceso de formalización de tu negocio, desde la elección de la figura societaria hasta los primeros pasos operativos.</p></div>
+<div class="cards"><div class="card"><div class="symbol">★</div><h3>SAS</h3><p>Sociedad por Acciones Simplificada. Una alternativa flexible para muchos emprendimientos, sujeta a los requisitos y restricciones legales vigentes.</p><ul><li>Evaluación de conveniencia</li><li>Documentación y trámite de constitución</li><li>Orientación en obligaciones posteriores</li></ul></div>
+<div class="card"><div class="symbol">⌂</div><h3>Sociedad Anónima (S. A.)</h3><p>Orientación para proyectos que requieren una estructura societaria por acciones.</p><ul><li>Revisión de requisitos</li><li>Apoyo documental y coordinación del trámite</li><li>Registro y obligaciones iniciales</li></ul></div>
+<div class="card"><div class="symbol">◇</div><h3>Otras figuras</h3><p>Evaluación de compañía limitada u otras alternativas según socios, actividad, capital y objetivos.</p><ul><li>Comparación de opciones</li><li>Ruta de formalización</li><li>Gestiones complementarias según el caso</li></ul></div></div>
+<div class="note">La figura recomendada y los pasos concretos dependen de la actividad y normativa vigente. Los trámites que exijan patrocinio o intervención de profesionales habilitados se coordinan con el especialista correspondiente.</div><button class="btn dark" data-go="contacto">Quiero constituir una empresa →</button></section>
+<section class="panel" id="capacitaciones"><div class="sectionhead"><div class="eyebrow">Formación aplicada</div><h2>Capacitaciones y talleres</h2><p>Sesiones prácticas para emprendedores, profesionales y equipos de trabajo. Modalidades y temarios adaptables a la necesidad.</p></div>
+<div class="cards"><div class="card"><div class="symbol">▦</div><h3>Tributación en Ecuador</h3><ul><li>IVA e Impuesto a la Renta</li><li>Regímenes y obligaciones del SRI</li><li>Anexos y gastos personales</li><li>Facturación electrónica y actualizaciones tributarias</li></ul></div>
+<div class="card"><div class="symbol">▤</div><h3>Nómina desde cero</h3><ul><li>Roles de pago y novedades</li><li>Horas extras, beneficios y provisiones</li><li>Décimos, vacaciones y liquidaciones</li><li>Procesos IESS y SUT</li></ul></div>
+<div class="card"><div class="symbol">✦</div><h3>Actualización laboral y herramientas</h3><ul><li>Reformas y novedades normativas</li><li>Controles y buenas prácticas de nómina</li><li>Excel e indicadores para gestión</li><li>Talleres personalizados para equipos</li></ul></div></div>
+<div class="chips"><span class="chip">Individual</span><span class="chip">Equipos empresariales</span><span class="chip">Talleres prácticos</span><span class="chip">Modalidad a coordinar</span></div><button class="btn dark" data-go="contacto">Solicitar programa de capacitación →</button></section>
+<section class="panel" id="empleabilidad"><div class="sectionhead"><div class="eyebrow">Desarrollo profesional</div><h2>CV, LinkedIn y empleabilidad</h2><p>Herramientas para comunicar mejor tu experiencia y prepararte para nuevas oportunidades laborales.</p></div>
+<div class="cards"><div class="card"><div class="symbol">▤</div><h3>Hoja de vida profesional</h3><ul><li>Revisión y actualización de CV</li><li>Redacción orientada a logros</li><li>Organización de experiencia y competencias</li><li>Adaptación a vacantes y sistemas ATS</li></ul></div>
+<div class="card"><div class="symbol">in</div><h3>Perfil de LinkedIn</h3><ul><li>Titular y resumen profesional</li><li>Experiencia y palabras clave</li><li>Presentación de habilidades</li><li>Buenas prácticas de networking</li></ul></div>
+<div class="card"><div class="symbol">↗</div><h3>Preparación laboral</h3><ul><li>Orientación para entrevistas</li><li>Identificación de fortalezas</li><li>Organización de búsqueda laboral</li><li>Marca personal profesional</li></ul></div></div><div class="note">El servicio busca mejorar la presentación profesional; no implica garantía de contratación.</div><button class="btn dark" data-go="contacto">Quiero mejorar mi perfil →</button></section>
+<section class="panel" id="metodo"><div class="sectionhead"><div class="eyebrow">Atención paso a paso</div><h2>Cómo trabajamos</h2><p>Un proceso claro para definir objetivos, alcance, tiempos y entregables.</p></div><div class="steps"><div class="step"><b>01</b><h3>Primer contacto</h3><p>Cuéntanos qué necesitas y cuál es tu objetivo.</p></div><div class="step"><b>02</b><h3>Diagnóstico</h3><p>Revisamos el contexto y los requisitos principales.</p></div><div class="step"><b>03</b><h3>Propuesta</h3><p>Definimos alcance, honorarios y plazos antes de iniciar.</p></div><div class="step"><b>04</b><h3>Ejecución</h3><p>Desarrollamos el servicio y damos seguimiento acordado.</p></div></div><div class="note">Los honorarios y plazos se cotizan según la complejidad de cada solicitud.</div><button class="btn dark" data-go="contacto">Iniciar consulta →</button></section>
+<section class="panel" id="faq"><div class="sectionhead"><div class="eyebrow">Resolvemos tus dudas</div><h2>Preguntas frecuentes</h2></div>
+<details><summary>¿Qué compañía me conviene: SAS, S. A. o limitada?</summary><p>Depende de la actividad, socios, necesidades de inversión y requisitos legales. Podemos revisar tu caso y comparar las opciones antes de iniciar el trámite.</p></details>
+<details><summary>¿Puedo contratar una capacitación para mi empresa?</summary><p>Sí. El contenido y la duración se pueden definir según el nivel de los participantes y los procesos de tu organización.</p></details>
+<details><summary>¿Atienden personas naturales y empresas?</summary><p>Sí. El portafolio incluye soluciones para contribuyentes individuales, emprendedores y organizaciones.</p></details>
+<details><summary>¿Los servicios tienen precio fijo?</summary><p>Se presenta una cotización según el alcance, documentación y complejidad del caso.</p></details>
+<details><summary>¿Puedo solicitar revisión de mi CV y LinkedIn?</summary><p>Sí. Se puede trabajar la estructura, redacción y presentación profesional de ambos perfiles.</p></details></section>
+<section class="panel" id="contacto"><div class="sectionhead"><div class="eyebrow">Hablemos de tu proyecto</div><h2>Solicita una asesoría</h2><p>Completa los datos y prepara tu mensaje para enviarlo directamente por WhatsApp.</p></div><div class="contact">
+<div class="card"><h3>Contacto directo</h3><p>WhatsApp</p><h3>099 632 3682</h3><p>Correo electrónico</p><p><a href="mailto:work.solution.gye@hotmail.com">work.solution.gye@hotmail.com</a></p><p>Atención en Ecuador. La disponibilidad y modalidad de atención se coordinan previamente.</p><a class="btn dark" href="https://wa.me/593996323682" target="_blank" rel="noopener">Abrir WhatsApp ↗</a></div>
+<form class="card" id="leadForm"><h3>Cuéntanos qué necesitas</h3><div class="field"><label for="nombre">Nombre</label><input id="nombre" required maxlength="80" placeholder="Tu nombre"></div><div class="field"><label for="servicio">Servicio</label><select id="servicio" required><option value="">Selecciona una opción</option><option>Asesoría tributaria</option><option>Nómina y RR. HH.</option><option>Constitución de compañía</option><option>Capacitaciones</option><option>CV y LinkedIn</option><option>Otra consulta</option></select></div><div class="field"><label for="detalle">Breve descripción</label><textarea id="detalle" required maxlength="1200" placeholder="Describe tu necesidad, sin incluir contraseñas ni información confidencial"></textarea></div><button class="btn primary" type="submit">Preparar consulta en WhatsApp →</button><p style="font-size:12px;color:#6d7a8d">El formulario no almacena datos en esta página: abre WhatsApp con el texto preparado.</p></form></div></section>
+</div><div class="footer">© <span id="year"></span> Diego Anzules Consultor · Sitio informativo · Ecuador</div></main></div>
+<script>
+const pages=[...document.querySelectorAll('.panel')],nav=[...document.querySelectorAll('[data-page]')],sidebar=document.getElementById('sidebar'),toggle=document.getElementById('menuToggle');
+function showPage(id){if(!document.getElementById(id))return;pages.forEach(p=>p.classList.toggle('active',p.id===id));nav.forEach(b=>{let active=b.dataset.page===id;b.classList.toggle('active',active);b.setAttribute('aria-current',active?'page':'false')});sidebar.classList.remove('open');toggle.setAttribute('aria-expanded','false');window.scrollTo({top:0,behavior:'smooth'});history.replaceState(null,'','#'+id)}
+nav.forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
+toggle.addEventListener('click',()=>{let open=sidebar.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open))});
+document.getElementById('leadForm').addEventListener('submit',e=>{e.preventDefault();let n=document.getElementById('nombre').value.trim(),s=document.getElementById('servicio').value,d=document.getElementById('detalle').value.trim();if(!n||!s||!d)return;let msg=`Hola, soy ${n}. Me interesa: ${s}.\n\nConsulta: ${d}`;window.open('https://wa.me/593996323682?text='+encodeURIComponent(msg),'_blank','noopener,noreferrer')});
+document.getElementById('year').textContent=new Date().getFullYear();if(location.hash&&document.getElementById(location.hash.slice(1)))showPage(location.hash.slice(1));
+</script></body></html>
